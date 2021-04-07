@@ -6,17 +6,33 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+} 
+.lien:hover{
+    border-top: grey solid 2px;
+    transition:none;
+}
+*:focus{
+    border:blue solid 3px;
+}
+#cta-hero:focus{
+    border:blue solid 3px;
+}
+.social:focus{
+    border-bottom:blue solid 3px;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+}
 a,
 button {
     transition: all .3s ease-in-out;
     outline: none!important;
 }
 
-a:hover {
-    text-decoration: none;
-    cursor: pointer;
-}
+
 
 #page-loading-blocs-notifaction {
     position: fixed;
@@ -750,7 +766,7 @@ h4 {
 }
 
 .portfolio-thumb {
-    margin-bottom: 24px;
+    margin-bottom: 0px;
 }
 
 .portfolio-row {
